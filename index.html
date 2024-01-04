@@ -9,8 +9,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+<!---------- Home page  ----------->
+
     <header>
         <nav>
             <div class="left">
@@ -30,30 +32,40 @@
             </div>
         </nav>
     </header>
+
+<!----------------------- main section -------------- -->
+
     <main id="home">
         <section class="firstsection">
             <div class="leftsection">
-                <h3>Hey, I am</h3>
+                <h3 class="hey">Hey, I am</h3>
                 <h1>Mehtab</h1>
                 <h3 class="h3">And I'm a <span id="element"></span></h3>
                 <span id="element"></span>
-                <p>Passionate Btech CSE Student | Aspiring Software Engineer | My Passion is to serve BigTech Companies
-                    with my Abilities and Skills.</p>
+                <p>Passionate Btech CSE Student | Aspiring Software Engineer | Explorer at Explorin | Frontend Developer | Eager To Give My Contribution to 
+                    This Technical World. </p>
                 <div class="social-media">
                     <a href="https://www.facebook.com/saymehtab01" target="_blank"><i class='bx bxl-facebook'></i></a>
-                    <a href="https://www.instagram.com/_mehtab__09/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.instagram.com/_mehtab__09/" target="_blank"><i
+                            class='bx bxl-instagram'></i></a>
                     <a href="https://twitter.com/say_mehtab" target="_blank"><i class='bx bxl-twitter'></i></a>
-                    <a href="https://www.linkedin.com/in/mohd-mehtab-0937122a0/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/mohd-mehtab-0937122a0/" target="_blank"><i
+                            class='bx bxl-linkedin'></i></a>
                 </div>
                 <div class="btn"><a href="#">Download CV</a></div>
             </div>
             <div class="rightsection">
-                <img src="pic9.png" alt="profile pic">
-            </div>  
+                <img src="pic.png" alt="profile pic">
+            </div>
         </section>
     </main>
+
+<!--------------- main section ends  -------------->
+
+
     <script src="https://kit.fontawesome.com/eb25b5ec6c.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
     <script>
         var typed = new Typed('#element', {
             strings: ['Web Developer', 'Graphic Designer', 'Vedio Editor', 'Frontend Developer'],
@@ -61,89 +73,102 @@
         });
     </script>
 
-    <!-- - about section ------>
 
-     <section class="about" id="about">
+
+<!-------- ----- about section ----------->
+
+
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-img">
-                    <img src="pic9.png" alt="My pic">
+                    <img src="pic.png" alt="My pic">
                 </div>
                 <div class="about-info">
-                    <h1>About <span>Me</span></h1>
-                    <p>Hello, I'm Mohd Mehtab, currently navigating through the exciting realm of computer science in my
-                        first year at Shivalik College, Dehradun. As a budding technophile, I'm wholeheartedly dedicated
-                        to honing my coding prowess, undertaking the challenges presented on esteemed platforms like
-                        LeetCode, HackerRank, and Coding Ninja. Each day, I embrace the opportunity to enhance my
-                        skills, fortifying my foundation in the world of programming.
-
-                        My passion extends beyond the realm of algorithms, branching into the fascinating domain of web
-                        development. Proficient in front-end development, I derive immense satisfaction from crafting
-                        interactive and visually appealing digital experiences. Embracing the fusion of creativity and
-                        functionality, I strive to create seamless user interfaces that leave a lasting impression.
-
-                        <!-- With a vision set on the horizon, I aspire to contribute my skills and knowledge to the
-                        forefront of technology. Dreaming big, I aim to serve in renowned tech companies, bringing my
-                        unique perspective and innovative solutions to the table. Driven by a relentless pursuit of
-                        excellence, I am committed to staying abreast of the latest industry trends and technologies,
-                        ensuring my skill set remains at the cutting edge. -->
-
-                        <!-- In the dynamic world of technology, I see challenges as opportunities for growth, and setbacks
-                        as stepping stones towards success. Eager to embark on this exciting journey, I am fueled by the
-                        belief that dedication, coupled with a curious mind, can unlock doors to endless possibilities.
-                        Join me as I navigate the digital landscape, fueled by passion, curiosity, and an unwavering
-                        commitment to shaping the future of technology. -->
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p class="info">Hi, My name is Mohd Mehtab and I am from Himachal Pradesh. Currently I am completing my graduation from 
+                        Shivalik College of Engineering, Dehradun. As a Btech CSE student, My passion lies in coding and inovations
+                        with a keen curiosity about the development of large-scale apps and games. I am dedicated to enhance my coding 
+                        skills. Right now I know C, C++ and Python. Also, I am a Frontend Developer and this is my first portfolio website.
                     </p>
-                    <a href="#" class="btn2">Read More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- service section ----------- -->
-
-    <div class="services" id="services">
-        <div class="services-container">
-            <h1 class="sub-title">My <span>Services</span></h1>
-            <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti neque quidem eligendi officia sequi odit quis dolor officiis eum.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="bx bx-bar-chart-alt"></i>
-                    <h2>Digital Marketing</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti neque quidem eligendi officia sequi odit quis dolor officiis eum.</p>
-                    <a href="#">Learn More</a>
-                </div>
-                <div>
-                    <i class="bx bxs-paint"></i>
-                    <h2>Graphic Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti neque quidem eligendi officia sequi odit quis dolor officiis eum.</p>
-                    <a href="#">Learn More</a>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('achievement')">Achievement</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Coding</span><br>C, C++, Python</li>
+                                <li><span>Web Development</span><br>Frontend Developer</li>
+                                <li><span>Sports</span><br>Badminton District Level</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="achievement">
+                            <ul>
+                                <li><span>2023 - 2024</span><br>Member of Explorin Foundation Team</li>
+                                <li><span>2019 - 2020</span><br>2nd Rank in NCO ( National Cyber Olympiad )</li>
+                                <li><span>2022 - 2023</span><br>Gold Medal in Badminton ( District Level )</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Coding Journey</span><br>Explorin</li>
+                                <li><span>College</span><br>Shivalik College Of Engineering</li>
+                                <li><span>School</span><br>The Scholars Home</li>
+                            </ul>
+                        </div>
                 </div>
             </div>
         </div>
     </div>
 
 
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 
 
+    <!-- service section ----------- -->
 
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- <div class="services" id="services">
+        <div class="services-container">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti neque quidem
+                        eligendi officia sequi odit quis dolor officiis eum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="bx bx-bar-chart-alt"></i>
+                    <h2>Digital Marketing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti neque quidem
+                        eligendi officia sequi odit quis dolor officiis eum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="bx bxs-paint"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae corrupti neque quidem
+                        eligendi officia sequi odit quis dolor officiis eum.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
 
 
@@ -157,10 +182,13 @@
                     <p><i class='bx bxs-send'></i> reachmehtabsce@gmail.com</p>
                     <p><i class="fa-sharp fa-solid fa-phone"></i>8580906264</p>
                     <div class="social-icons">
-                        <a href="https://www.facebook.com/saymehtab01" target="_blank"><i class='bx bxl-facebook'></i></a>
-                        <a href="https://www.instagram.com/_mehtab__09/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                        <a href="https://www.facebook.com/saymehtab01" target="_blank"><i
+                                class='bx bxl-facebook'></i></a>
+                        <a href="https://www.instagram.com/_mehtab__09/" target="_blank"><i
+                                class='bx bxl-instagram'></i></a>
                         <a href="https://twitter.com/say_mehtab" target="_blank"><i class='bx bxl-twitter'></i></a>
-                        <a href="https://www.linkedin.com/in/mohd-mehtab-0937122a0/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.linkedin.com/in/mohd-mehtab-0937122a0/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
                     </div>
                 </div>
                 <div class="contact-right">
@@ -173,11 +201,11 @@
                 </div>
             </div>
         </div>
-    </div> 
-
-    <!-- contact section ends --------- -->
+    </div>
 
     <!-- java script  -->
+
+
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
@@ -188,7 +216,6 @@
             sidemenu.style.right = "-200px";
         }
     </script>
-
 
     </div>
 </body>

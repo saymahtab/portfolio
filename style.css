@@ -10,15 +10,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 25);
-    z-index: 100;
-}
-
 body {
     background-color: rgb(0, 0, 25);
     color: white;
@@ -27,17 +18,24 @@ body {
 
 /*----------------- navigation bar ------------- */
 
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: rgb(2, 3, 41);
 }
 
 .left {
     font-size: 25px;
-    margin: 0px 10px;
+    padding-left: 33px;
 }
 
 .left .simple {
@@ -50,6 +48,11 @@ nav {
     border-radius: 12px 12px 12px;
     padding: 0px 10px;
 }
+
+.right{
+    padding-right: 38px;
+}
+
 
 nav ul {
     display: flex;
@@ -93,15 +96,11 @@ nav ul li a:hover::after {
 .firstsection {
     display: flex;
     justify-content: space-around;
-    margin: 30px 0;
-}
-
-.firstsection>div {
-    width: auto;
+    align-items: center;
 }
 
 .leftsection {
-    margin: 125px 120px
+    margin: 180px 152px 0px;
 }
 
 .leftsection h3 {
@@ -125,7 +124,7 @@ nav ul li a:hover::after {
 .rightsection img {
     width: 60vh;
     margin-top: 100px;
-    margin-right: 20px;
+    margin-right: 85px;
 
 }
 
@@ -151,79 +150,96 @@ nav ul li a:hover::after {
     opacity: 100%;
 }
 
+
 .btn {
     display: inline-block;
-    padding: 2px 19px;
-    background: transparent;
+    padding: 14px 25px;
+    background:  aqua;
     border-radius: 4rem;
-    font-size: 1.6rem;
+    font-size: 15px;
+    box-shadow: 0 0 5px aqua;
+    color: rgb(0, 0, 25);
+    font-weight: 600;
+}
+.btn a{
+    color: rgb(0, 0, 25);
+}
+
+/* ------------about section ---------------- */
+
+#about{
+    padding: 123px 0;
     color: white;
-    border: 2px solid white;
-    opacity: 70%;
-    transition: 0.5s ease;
 }
-
-.btn a {
-    font-size: 20px;
-    color: white;
-}
-
-.btn:hover {
-
-    border: 2px solid aqua;
-    opacity: 100%;
-}
-
-
-/* about section ---------------- */
-
-
-.about {
-    color: white;
-    margin: 61px;
-    padding-bottom: 64px;
-}
-
-.row {
+.row{
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
-
 }
-
-.about-info span {
-    color: aqua;
-}
-
-.abput-img {
+.about-img{
     flex-basis: 35%;
 }
-
-.about-img img {
-    width: 300px;
+.about-img img{
+    margin: 25px 38px 0px;
+    width: 80%;
     border-radius: 15px;
-    margin-left: 53px;
 }
-
-.about-info {
-    flex-basis: 50%;
+.about-info{
+    flex-basis: 60%;
+}
+.about-info .info{
+    font-size: 15px;
+    padding-right: 138px;
+    
+}
+.about-info span{
+    color: aqua;
+}
+.sub-title{
     font-size: 50px;
-}
-
-.about-info h1 {
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 3px;
     font-weight: 200;
+    color: white;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 75px;
+    font-size: 18px;
+    color: #b54769;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 15px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
 
-.about-info p {
-    font-size: 12px;
-    font-weight: 100;
-}
+
 
 /* services section ---------- */
 
-#services {
+/* #services {
     margin: -73px 14px 124px;
     padding-top:20px ;
 }
@@ -275,7 +291,7 @@ nav ul li a:hover::after {
 
 .services-container h1 span {
     color: aqua;
-}
+} */
 
 
 
@@ -389,7 +405,8 @@ nav .fas {
     }
 
     nav .fa-bars {
-        margin: -41px 29px;
+        display: block;
+        margin: -41px -11px;
     }
 
     .left {
@@ -440,31 +457,35 @@ nav .fas {
         cursor: pointer;
     }
 
-    /* main page --------- */
+    /* ---------------main page --------- */
+
 
     .firstsection {
         display: block;
         justify-content: space-around;
-        margin: 30px 0;
-    }
-
-    .firstsection>div {
-        width: auto;
+        margin: 120px 7px;
     }
 
     .leftsection {
         margin: 125px 0;
-        padding: 30px 20px;
+        padding: 40px 20px;
+        
     }
 
-    .leftsection h3 {
-        font-size: 20px;
+    .leftsection .hey {
+        font-size: 25px;
+        padding-bottom: 5px;
+    }
+    .leftsection .h3{
+        font-size: 20px ;
     }
 
     .leftsection h1 {
-        font-size: 50px;
-        margin-top: -16px;
+        font-size: 60px;
+        margin-top: -19px;
         color: #00ffff;
+        padding-bottom: 5px;
+        
     }
 
     .leftsection .h3 {
@@ -476,7 +497,8 @@ nav .fas {
     }
 
     .leftsection p {
-        font-size: 10px;
+        padding-top: 14px;
+        font-size: 13px;
         text-align: justify;
     }
 
@@ -487,37 +509,192 @@ nav .fas {
     }
 
 
+    /* about section ------------ */
 
 
-
-
-    
-    /* home page ------ */
-
-    /*  .firstsection{
+    #about{
+        padding: 123px 0;
+        color: white;
+    }
+    .row{
         display: block;
-        justify-content: center;
-        margin: 0;
+        justify-content: space-around;
     }
-    .leftsection{
-        margin: 155px 70px;
+    .about-img{
+        flex-basis: 35%;
+    }
+    .about-img img{
+        margin: -165px 30px 0px;
+        width: 80%;
+        border-radius: 15px;
+    }
+    .about-info{
+        flex-basis: 60%;
+    }
+    .about-info p{
+        padding-left: 25px;
+
+    }
+    .about-info .info{
+        font-size: 13px;
+        padding-right: 36px;
+        align-items: center;
+        
+    }
+    .about-info span{
+        color: aqua;
+    }
+    .sub-title{
+        font-size: 45px;
+        font-weight: 200;
+        color: white;
+        padding-left: 25px;
+    }
+    .tab-titles{
+        display: flex;
+        margin: 20px 0 40px;
+    }
+    .tab-links{
+        margin-right: 0px;
+        font-size: 17px;
+        color: #b54769;
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+    }
+    .tab-links::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: white;
+        position: absolute;
+        left: 27px;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+    .tab-links.active-link::after{
+        width: 50%;
+    }
+    .tab-contents ul li{
         font-size: 15px;
+        padding-left: 25px;
     }
-    .leftsection h3{
-        font-size: 30px;
+    .tab-contents ul li span{
+        color: #b54769;
+        font-size: 14px;
     }
-    .leftsection h1{
-        font-size: 65px;
-        margin-top: -15px;
+    .tab-contents{
+        display: none;
     }
-    .rightsection img{
-       display: none;
+    .tab-contents.active-tab{
+        display: block;
     }
+
+
 
 
   /*---------  contact---------- */
 
-    .contact-container{
+
+  .contact-container {
+    background-color: black;
+    height: 210vw;
+}
+
+.contact-left {
+    margin: 0px 0px;
+    color: #c0bfbf;
+    flex-basis: 24%;
+    margin-right: 0px;
+}
+
+.contact-left h1 {
+    font-size: 38px;
+    padding: 13px 80px 0px;
+    font-family: 'Roboto';
+    font-weight: 600;
+}
+
+.contact-left span {
+    color: aqua;
+}
+
+.contact-right {
+    flex-basis: 40%;
+    margin: 68px 45px;
+}
+.contact-right form{
+    margin: -65px 0px;
+    margin-bottom: 8px;
+    padding-bottom: 20px;
+}
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: aqua;
+    margin-right: 20px;
+    margin-left: 35px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 35px;
+    padding-left: 70px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 35px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: aqua;
+    transform: translateY(-5px);
+}
+
+.contact-right form {
+    width: 100%
+}
+
+form input,
+form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.btn2 {
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 0px 12px;
+    background: aqua;
+    font-weight: 300;
+    transition: .4s ease;
+    cursor: pointer;
+}
+
+.btn2:hover {
+    background-color: rgb(5, 201, 201);
+    padding: -5px;
+}
+
+
+
+
+
+    /* .contact-container{
         height: 100%;
         width: 110vw;
     }
@@ -533,7 +710,7 @@ nav .fas {
     }
     .contact-left p{
         display: flex;
-    }
+    } */
     
 
 }
